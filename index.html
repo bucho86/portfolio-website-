@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Portfolio</title>
+    <style>
+        :root {
+            --green-1: #9deeb6;
+            --green-2: #ccffdd;
+            --green-3: #76db98;
+            --green-4: #66ff99;
+            --green-5: #33ff77;
+            --green-6: #00ff55;
+            --green-7: #00cc44;
+            --green-8: #009933;
+            --green-9: #006622;
+            --green-10: #003311;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--green-1);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--green-8);
+            color: white;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: var(--green-9);
+            border-bottom: 2px solid var(--green-6);
+            padding-bottom: 0.5rem;
+        }
+
+        .projects, .past-projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project {
+            background-color: var(--green-2);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-image {
+            height: 200px;
+            background-color: var(--green-4);
+        }
+
+        .project-info {
+            padding: 1rem;
+        }
+
+        .project-title {
+            color: var(--green-9);
+            margin-top: 0;
+        }
+
+        .project-description {
+            color: var(--green-10);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: var(--green-7);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Green Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#past-projects">Past Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h2>Current Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project 1</h3>
+                        <p class="project-description">A brief description of Project 1.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project 2</h3>
+                        <p class="project-description">A brief description of Project 2.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="past-projects">
+            <h2>Past Projects</h2>
+            <div class="past-projects">
+                <div class="project">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Past Project 1</h3>
+                        <p class="project-description">A brief description of Past Project 1.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Past Project 2</h3>
+                        <p class="project-description">A brief description of Past Project 2.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="placeholder-image-1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-image-2.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-image-3.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-image-4.jpg" alt="Gallery Image 4">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Green Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
